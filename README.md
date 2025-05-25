@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Detection</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lung Cancer Detection</h1>
+
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <label for="imageUpload" class="upload-label">Choose an Image</label>
+            <img id="previewImage" src="#" alt="Preview" style="display: none; max-width: 500px; max-height: 500px;">
+        </div>
+
+        <div class="button-section">
+            <button id="detectButton">Process Image</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Detection Result:</h2>
+            <p id="resultText">Waiting for detection...</p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
